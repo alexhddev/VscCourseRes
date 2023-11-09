@@ -1,5 +1,5 @@
 function double(arg, second){
-        return arg * arg
+    return arg * arg
 }
 
 const printMessage = (message)=>{
