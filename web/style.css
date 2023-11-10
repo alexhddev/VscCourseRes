@@ -1,5 +1,5 @@
-#container {
-    background-color: rgba(81, 115, 115, 0.72);
+.wrapper {
+    background-color: rgb(127, 191, 255);
     width: 800px;
     margin: auto;
 }
