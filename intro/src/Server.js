@@ -1,6 +1,6 @@
 import { createServer } from 'http'
 
-const hostname = '127.0.0.1';
+const hostname = 'localhost';
 const port = 8080;
 
 const server = createServer((req, res) => {
@@ -9,6 +9,6 @@ const server = createServer((req, res) => {
     res.end('Hello from dump server!\n')
 })
 
-server.listen(port, hostname, () => {
+server.listen(port, () => {
     console.log(`Server running at http://${hostname}:${port}/`);
 });
