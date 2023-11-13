@@ -1,7 +1,7 @@
 import { createServer } from 'http'
 
 const hostname = '127.0.0.1';
-const port = 3000;
+const port = 8080;
 
 const server = createServer((req, res) => {
     console.log(`Got connection from ${req.url}`)
