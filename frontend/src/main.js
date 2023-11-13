@@ -5,3 +5,5 @@ function double(arg, second){
 const printMessage = (message)=>{
     console.log(message)
 }
+
+printMessage('Dump example')
