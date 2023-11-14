@@ -11,3 +11,11 @@ function handleForm(){
 }
 
 handleForm();
+
+function checkName(name){
+    if (typeof name === 'string' && name.length > 3) {
+        console.log('Valid name')
+    } else {
+        throw new Error(`Invalid name: ${name}`)
+    }
+}
