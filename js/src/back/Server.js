@@ -1,12 +1,16 @@
 import { createServer } from 'http'
+import { CoolChecker } from '../utils/CoolChecker';
 
 const hostname = 'localhost';
 const port = 8080;
+
+const checker = new CoolChecker();
 
 const server = createServer((req, res) => {
     console.log(`Got connection from ${req.url}`)
     res.statusCode = 200
     res.end('Hello from dump server!\n')
+    checker.generateId();
 
 })
 
