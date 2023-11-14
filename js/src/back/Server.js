@@ -1,6 +1,5 @@
 import { createServer } from 'http'
 
-//@ts-check
 const hostname = 'localhost';
 const port = 8080;
 
