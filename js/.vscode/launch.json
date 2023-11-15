@@ -5,6 +5,14 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Debug Browser",
+            "request": "launch",
+            "type": "chrome",
+            "url": "file:///home/alexhd/work/VscCourseRes/js/src/front/index.html",
+            "webRoot": "${workspaceFolder}/src/front",
+            "runtimeExecutable": "/usr/bin/brave-browser-stable"
+        },
+        {
             "type": "node",
             "request": "launch",
             "name": "Server debug",
