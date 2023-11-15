@@ -1,4 +1,3 @@
-//@ts-check
 import { randomUUID } from 'crypto'
 
 class BaseClass {}

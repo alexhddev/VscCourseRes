@@ -1,5 +1,5 @@
 import { createServer } from 'http'
-import { CoolChecker } from '../utils/CoolChecker.js';
+import { CoolChecker } from '../utils/CoolChecker';
 
 const hostname = 'localhost';
 const port = 8080;
