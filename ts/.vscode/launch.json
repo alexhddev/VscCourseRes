@@ -5,6 +5,14 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "file:///home/alexhd/work/VscCourseRes/ts/src/front/index.html",
+            "webRoot": "${workspaceFolder}/src/front",
+            "runtimeExecutable": "/usr/bin/brave-browser-stable"
+        },
+        {
             "type": "node",
             "name": "Server debug with ts-node",
             "request": "launch",
