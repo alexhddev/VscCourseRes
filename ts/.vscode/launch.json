@@ -1,0 +1,22 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Browser",
+            "request": "launch",
+            "type": "chrome",
+            "url": "file:///home/alexhd/work/VscCourseRes/js/src/front/index.html",
+            "webRoot": "${workspaceFolder}/src/front",
+            "runtimeExecutable": "/usr/bin/brave-browser-stable"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Server debug",
+            "program": "${workspaceFolder}/src/back/Server.js"
+        }
+    ]
+}
