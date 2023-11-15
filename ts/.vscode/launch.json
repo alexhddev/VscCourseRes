@@ -5,18 +5,28 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Debug Browser",
+            "type": "node",
+            "name": "Server debug with ts-node",
             "request": "launch",
-            "type": "chrome",
-            "url": "file:///home/alexhd/work/VscCourseRes/js/src/front/index.html",
-            "webRoot": "${workspaceFolder}/src/front",
-            "runtimeExecutable": "/usr/bin/brave-browser-stable"
-        },
+            "runtimeArgs": [
+                "-r",
+                "ts-node/register"
+            ],
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "${workspaceFolder}/src/back/Server.ts"
+            ]
+        },        
         {
             "type": "node",
             "request": "launch",
-            "name": "Server debug",
-            "program": "${workspaceFolder}/src/back/Server.js"
+            "name": "Server debug ts",
+            "program": "${workspaceFolder}/src/back/Server.ts",
+            "preLaunchTask": "tsc: build - tsconfig.json",
+            "outFiles": [
+                "${workspaceFolder}/dist/**/*.js",
+                "!**/node_modules/**"
+            ]
         }
     ]
 }
