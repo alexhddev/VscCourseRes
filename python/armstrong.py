@@ -3,7 +3,7 @@
 # take input from the user
 num = int(input("Enter a number: "))
 
-def is_armstrong(arg: int):
+def is_armstrong(arg: int): 
     """Function printing python version."""
     sumz = 0
     # find the sum of the cube of each digit
