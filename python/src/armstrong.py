@@ -1,8 +1,5 @@
 """Python program to check if the number is an Armstrong number or not"""
 
-# take input from the user
-num = int(input("Enter a number: "))
-
 def is_armstrong(arg: int): 
     """Function printing python version."""
     sumz = 0
@@ -20,4 +17,4 @@ def is_armstrong(arg: int):
     print(arg, "is not an Armstrong number")
     return False
 
-is_armstrong(num)
+
