@@ -19,5 +19,9 @@ You can start the project with the start command
 3. third
 
 ----------
+/home/alexhd/work/VscCourseRes/others/sample.yaml
 
-index.html
+SampleData.json
+
+[Sample data](SampleData.json)
+
