@@ -16,6 +16,10 @@
       {
         "command": "weather-ext.getWeather",
         "title": "Weather: Get Weather"
+      },
+      {
+        "command": "weather-ext.getWeatherExtended",
+        "title": "Weather: Get Extended Weather"
       }
     ]
   },

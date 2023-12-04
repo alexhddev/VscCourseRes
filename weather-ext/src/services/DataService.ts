@@ -23,6 +23,14 @@ export class DataService {
             lon: parsedResponse.coord.lon,
             lat: parsedResponse.coord.lat
         }
+    }
 
+    public async getWeatherExtended(city: string): Promise<string>{
+        const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${apiKey}`;
+        const response = await fetch(url, {
+            method: 'GET'
+        })
+        const parsedResponse = await response.json();
+        return JSON.stringify(parsedResponse)
     }
 }

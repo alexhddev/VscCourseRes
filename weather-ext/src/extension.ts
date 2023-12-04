@@ -9,8 +9,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 	const dataService = new DataService();
 
-	let disposable = vscode.commands.registerCommand('weather-ext.getWeather', () => {
-
+	let getWeather = vscode.commands.registerCommand('weather-ext.getWeather', () => {
 		vscode.window.showInputBox({
 			value: 'Please enter city'
 		}).then(async city =>{
@@ -28,7 +27,27 @@ export function activate(context: vscode.ExtensionContext) {
 		})
 	});
 
-	context.subscriptions.push(disposable);
+	let getWeatherExtended = vscode.commands.registerCommand('weather-ext.getWeatherExtended', () => {
+		vscode.window.showInputBox({
+			value: 'Please enter city'
+		}).then(async city =>{
+			if (city) {
+				console.log(city)
+				const weatherData = await dataService.getWeatherExtended(city);
+				vscode.window.showInformationMessage(weatherData, 'Close', 'Open').then(result =>{
+					console.log(result)
+					if(result == 'Open') {
+						vscode.env.openExternal(
+							vscode.Uri.parse(`https://openweathermap.org/find?q=${city}`)
+						)
+					}
+				})
+
+			}
+		})
+	});
+
+	context.subscriptions.push(getWeather, getWeatherExtended);
 }
 
 export function deactivate() {}
