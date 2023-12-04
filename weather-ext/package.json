@@ -14,8 +14,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "weather-ext.helloWorld",
-        "title": "Hello World"
+        "command": "weather-ext.getWeather",
+        "title": "Weather: Get Weather"
       }
     ]
   },
