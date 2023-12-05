@@ -11,4 +11,8 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'angular-demo';
+
+  hello(){
+    console.log('Hello!')
+  }
 }
